@@ -30,7 +30,9 @@
         <input type="text" id="phone" name="web_request_quote[phone]">
 
         <label for="phone">Country</label>
-        <input type="text" id="country_id" name="web_request_quote[country_id]" required>
+        <select id="country_id" name="web_request_quote[country_id]" mdl-web-request="countries_option" required>
+          <option value=""></option>
+        </select>
 
         <label for="trans_mode">Transport Mode</label>
         <select id="trans_mode" name="web_request_quote[datas][trans_mode]" required>
