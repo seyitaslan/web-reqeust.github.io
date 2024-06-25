@@ -8,10 +8,8 @@
   </head>
   <body>
     <div class="form-container">
-      <form mdl-web-request-quote="form">
+      <form form="https://app.modaltrans.com/roster" method="post">
         <h2>Request a quote</h2>
-
-        <div mdl-web-request-quote="errors"></div>
 
         <label for="name">Name</label>
         <input type="text" id="name" name="web_request_quote[name]" required>
@@ -102,11 +100,9 @@
         <div mdl-web-request="recaptcha"></div>
 
         <button type="submit">Create Quote</button>
-        
-        <input style="display: none;" type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="wSRheXEmAHrdg2HzmxBZmw">
       </form>
     </div>
 
-    <script src="https://demo.modaltrans.com/roster/web_requests.js"></script>
+    <script src="http://demo.modaltrans.com/roster/web_requests.js"></script>
   </body>
 </html>
