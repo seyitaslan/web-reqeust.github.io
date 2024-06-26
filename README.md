@@ -107,6 +107,9 @@ Origin Postcode
 ```
 
 Origin Country (required)
+\```
+mdl-web-request="countries_option" # takes countries
+\```
 
 ```html
 <label for="origin_country_id">Origin Country</label>
