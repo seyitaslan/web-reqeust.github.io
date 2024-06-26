@@ -1,4 +1,17 @@
-Your custom account token
+Form tag example
+
+```html
+<form form="https://app.modaltrans.com/roster/web_request_quotes" method="post">
+```
+
+Add this script tag to the end of the body (required)
+```html
+<script src="http://app.modaltrans.com/roster/web_requests.js"></script>
+```
+
+
+
+Your custom account token (required)
 
 ```html
 <input type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="{{YOUR_ACCOUNT_TOKEN}}" required>
