@@ -2,8 +2,6 @@ Form tag example
 
 ```html
 <form form="https://app.modaltrans.com/roster/web_request_quotes" method="post">
-  <!-- Form elements -->
-</form>
 ```
 
 Add this script tag to the end of the body (required)
@@ -17,10 +15,10 @@ Your custom account token (required)
 <input type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="{{YOUR_ACCOUNT_TOKEN}}" required>
 ```
 
-URL to redirect to after the request is successful
+URL to redirect to after the request is successful (optional)
 
 ```html
-<input type="hidden" id="redirect_url" name="web_request_quote[redirect_url]" value="{{YOUR_REDIRECT_URL}}">
+<input type="hidden" id="redirect_url" name="web_request_quote[redirect_url]" value="{{YOUR_REDIRECT_URL}}" required>
 ```
 
 User Name (required)
@@ -37,7 +35,7 @@ Company Name (required)
 <input type="text" id="company_name" name="web_request_quote[company_name]" required>
 ```
 
-Tax No
+Tax No (optional)
 
 ```html
 <label for="tax_no">Tax No</label>
@@ -51,14 +49,14 @@ Email (required)
 <input type="text" id="email" name="web_request_quote[email]" required>
 ```
 
-Phone
+Phone (optional)
 
 ```html
 <label for="phone">Phone</label>
 <input type="text" id="phone" name="web_request_quote[phone]">
 ```
 
-Trans Mode
+Trans Mode (optional)
 
 ```html
 <label for="trans_mode">Transport Mode</label>
@@ -80,21 +78,21 @@ Shipment Type (required)
 </select>
 ```
 
-Total Package
+Total Package (optional)
 
 ```html
 <label for="total_package">Total Package</label>
 <input type="number" id="total_package" name="web_request_quote[datas][total_package]">
 ```
 
-Gross Weight
+Gross Weight (optional)
 
 ```html
 <label for="gross_weight">Gross Weight</label>
 <input type="number" id="gross_weight" name="web_request_quote[datas][gross_weight]">
 ```
 
-Total Volume
+Total Volume (optional)
 
 ```html
 <label for="total_volume">Total Volume</label>
@@ -124,7 +122,7 @@ Origin Address (required)
 <input type="text" id="origin_address" name="web_request_quote[datas][origin_address]" required>
 ```
 
-Origin Postcode
+Origin Postcode (optional)
 
 ```html
 <label for="origin_postcode">Origin Postcode</label>
@@ -151,7 +149,7 @@ Destination Address (required)
 <input type="text" id="destination_address" name="web_request_quote[datas][destination_address]" required>
 ```
 
-Destination Postcode
+Destination Postcode (optional)
 
 ```html
 <label for="destination_postcode">Destination Postcode</label>
@@ -171,19 +169,19 @@ Destination Country (required)
 mdl-web-request="countries_option" # Takes countries
 ```
 
-Special Instructions
+Special Instructions (optional)
 ```html
 <label for="special_instructions">Special Instructions</label>
 <textarea id="special_instructions" name="web_request_quote[datas][special_instructions]"></textarea>
 ```
 
-Customer Reference
+Customer Reference (optional)
 ```html
 <label for="customer_ref">Customer Reference</label>
 <input type="text" id="customer_ref" name="web_request_quote[datas][customer_ref]">
 ```
 
-Notes
+Notes (optional)
 ```html
 <label for="notes">Notes</label>
 <textarea id="notes" name="web_request_quote[datas][notes]"></textarea>
