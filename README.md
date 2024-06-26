@@ -1,3 +1,9 @@
+Your custom account token
+
+```html
+<input type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="{{YOUR_ACCOUNT_TOKEN}}" required>
+```
+
 User Name (required)
 
 ```html
