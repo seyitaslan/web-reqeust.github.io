@@ -9,8 +9,6 @@ Add this script tag to the end of the body (required)
 <script src="http://app.modaltrans.com/roster/web_requests.js"></script>
 ```
 
-
-
 Your custom account token (required)
 
 ```html
@@ -181,4 +179,9 @@ Notes
 ```html
 <label for="notes">Notes</label>
 <textarea id="notes" name="web_request_quote[datas][notes]"></textarea>
+```
+
+reCAPTCHA (required)
+```html
+<div mdl-web-request="recaptcha"></div>
 ```
