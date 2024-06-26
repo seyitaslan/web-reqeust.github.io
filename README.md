@@ -131,7 +131,7 @@ Destination Postcode
 
 Destination Country (required)
 
-```html
+```
 mdl-web-request="countries_option"
 ```
 
