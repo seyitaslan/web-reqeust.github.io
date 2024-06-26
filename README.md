@@ -107,9 +107,6 @@ Origin Postcode
 ```
 
 Origin Country (required)
-\```
-mdl-web-request="countries_option" # takes countries
-\```
 
 ```html
 <label for="origin_country_id">Origin Country</label>
@@ -133,6 +130,10 @@ Destination Postcode
 ```
 
 Destination Country (required)
+
+```html
+mdl-web-request="countries_option"
+```
 
 ```html
 <label for="destination_country_id">Destination Country</label>
