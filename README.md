@@ -115,6 +115,10 @@ Origin Country (required)
 </select>
 ```
 
+```
+mdl-web-request="countries_option" # Takes countries
+```
+
 Destination Address (required)
 
 ```html
@@ -131,15 +135,15 @@ Destination Postcode
 
 Destination Country (required)
 
-```
-mdl-web-request="countries_option"
-```
-
 ```html
 <label for="destination_country_id">Destination Country</label>
 <select id="destination_country_id" name="web_request_quote[datas][destination_country_id]" mdl-web-request="countries_option" required>
   <option value=""></option>
 </select>
+```
+
+```
+mdl-web-request="countries_option" # Takes countries
 ```
 
 Special Instructions
