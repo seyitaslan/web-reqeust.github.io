@@ -14,13 +14,13 @@ Add this script tag to the end of the body (required)
 Your custom account token (required)
 
 ```html
-<input type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="{{YOUR_ACCOUNT_TOKEN}}">
+<input type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="{{YOUR_ACCOUNT_TOKEN}}" required>
 ```
 
 URL to redirect to after the request is successful
 
 ```html
-<input type="hidden" id="redirect_url" name="web_request_quote[redirect_url]" value="{{YOUR_REDIRECT_URL}}" required>
+<input type="hidden" id="redirect_url" name="web_request_quote[redirect_url]" value="{{YOUR_REDIRECT_URL}}">
 ```
 
 User Name (required)
