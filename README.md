@@ -14,7 +14,7 @@ Add this script tag to the end of the body (required)
 Your custom account token (required)
 
 ```html
-<input type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="{{YOUR_ACCOUNT_TOKEN}}" required>
+<input type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="{{YOUR_ACCOUNT_TOKEN}}">
 ```
 
 URL to redirect to after the request is successful
