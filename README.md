@@ -15,6 +15,12 @@ Your custom account token (required)
 <input type="hidden" id="patron_token" name="web_request_quote[patron_token]" value="{{YOUR_ACCOUNT_TOKEN}}" required>
 ```
 
+The URL to redirect to after the request is successful
+
+```html
+<input type="hidden" id="redirect_url" name="web_request_quote[redirect_url]" value="{{YOUR_REDIRECT_URL}}" required>
+```
+
 User Name (required)
 
 ```html
