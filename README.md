@@ -8,7 +8,7 @@ Form tag example
 
 Add this script tag to the end of the body (required)
 ```html
-<script src="http://app.modaltrans.com/roster/web_requests.js"></script>
+<script src="http://app.modaltrans.com/roster/web_requests/cdn.js"></script>
 ```
 
 Your custom account token (required)
