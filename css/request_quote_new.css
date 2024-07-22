@@ -1,0 +1,524 @@
+/*   
+Theme Name: Oceanside Logistics Ltd theme
+Theme URI: http://www.oceansidelogistics.com/
+Description: Oceanside Logistics Ltd theme
+Author: Rooster Marketing
+Author URI: http://www.roostermarketing.com
+Version: 1
+*/
+
+
+
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "proxima-nova",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin:0;
+    padding:0;
+    color: #232323;
+}
+
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+*/
+* Global CSS resets for most HTML elements
+ * Removes all browser-specific styling
+*/
+
+/* Ensure all elements don't expand their specified width with padding, borders etc. */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Remove browser-specific styling (margin, padding etc.) from most major HTML elements */
+html, body, div, span, h1, h3, h4, p, a, img, small, ul, form, label, input, textarea, select, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    border: 0;
+}
+
+/*ol, ul {
+    list-style: none inside none;
+}*/
+
+input[type="submit"],
+input[type="tel"],
+input[type="email"],
+input[type="text"],
+textarea {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+select {
+    font-size: 14px;
+    position: relative;
+    font-family: "proxima-nova",sans-serif;
+    background-color: transparent;
+    width: 100%;
+    display: block;
+    height: 53px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    z-index: 1;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #232323;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea,
+input[type="tel"],
+input[type="email"],
+select,
+input[type="text"] {
+    width: 100%;
+    background-color: #EAEAEA;
+    font-size: 14px;
+    font-family: "proxima-nova",sans-serif;
+    color: #232323;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    resize: none;
+    outline: none;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="text"] {
+    height: 53px;
+}
+
+span.wpcf7-list-item {
+    margin: 0 0 15px 0!important;
+}
+
+textarea:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="text"]:focus {
+    background-color: #00A6D0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #232323;
+}
+textarea:focus::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #232323;
+}
+textarea:focus::-moz-placeholder,
+input:focus::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #232323;
+}
+textarea:focus:-ms-input-placeholder,
+input:focus:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #232323;
+}
+textarea:focus:-moz-placeholder,
+input:focus:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+/* Display settings for HTML5 elements for legacy browsers */
+main,
+section {
+    display: block;
+}
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+h1,h3,h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 61px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p, a, ul {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+ul {
+    padding:0;
+    margin:0;
+}
+
+a {
+    text-decoration:none;
+    color: #232323;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.wpcf7-submit {
+    font-family: "proxima-nova",sans-serif;
+    background-color: transparent;
+    border: 2px solid #232323;
+    color: #232323;
+    border-radius: 20px;
+    text-align: center;
+    padding: 8px 30px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
+}
+
+
+/*========================
+Remove borders on apple products
+========================*/
+input, textarea {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    overflow: auto;
+  }
+  
+
+/*========================
+Contact form 7 styles
+========================*/
+span.wpcf7-not-valid-tip {
+    display: none !important;
+}
+
+div.wpcf7 form input.wpcf7-not-valid,
+div.wpcf7 form textarea.wpcf7-not-valid,
+div.wpcf7 form select.wpcf7-not-valid {
+    border-color: #d8000c;
+    background-color: #ffbaba;
+}
+
+div.wpcf7 div.wpcf7-response-output {
+    width: 100%;
+    font-weight: 300;
+    font-size: 0.875em;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    margin: 0 0 30px;
+    padding: 18px 14px;
+    margin: 30px 0 0 0;
+}
+
+div.wpcf7 .wpcf7-response-output.wpcf7-validation-errors {
+    color: #d8000c;
+    border: 1px solid #d8000c;
+    background-color: #ffbaba;
+}
+
+div.wpcf7 .wpcf7-response-output.wpcf7-mail-sent-ok {
+    color: #4f8a10;
+    border: 1px solid #4f8a10;
+    background-color: #dff2bf;
+}
+
+span.wpcf7-form-control-wrap {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.wpcf7 h3 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    display: block;
+}
+
+.checkbox.gdpr-terms {
+	clear: both;
+	padding: 0;
+}
+
+.checkbox.gdpr-terms label {
+	font-size: 0.813rem;
+	color: #232323;
+}
+
+.checkbox.gdpr-terms label a {
+	display: inline-block;
+	text-decoration: none;
+	color: #00A6D0;
+	font-size: 0.813rem;
+}
+
+.checkbox.gdpr-terms input[type="checkbox"] {
+	margin: 0 8px 5px 0;
+	position: relative;
+	width: 15px;
+	height: 15px;
+	top: 2px;
+	cursor: pointer;
+	display: inline;
+	-webkit-appearance: checkbox;
+	appearance: checkbox;
+}
+
+.checkbox.gdpr-terms .wpcf7-list-item {
+	margin: 0;
+}
+
+.checkbox.gdpr-terms .wpcf7-list-item-label {
+	display: inline;
+}
+
+
+
+
+/*========================
+Contact page
+========================*/
+.contact-section {
+    margin-bottom: 50px;
+}
+.contact-section .contact-info-wrap {
+    padding-left: 40px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.contact-section .contact-info-wrap.sidebar-wrap {
+    max-width: 450px;
+}
+
+@media screen and (max-width : 880px) {
+
+    .contact-section .address-info,
+    .contact-section .contact-form {
+        width: 49%;
+    }
+
+}
+
+@media screen and (max-width : 768px) { /* iPad */
+
+    .grid-5,
+    .grid-7 {
+        width: 100%;
+    }
+
+    .contact-section .address-info,
+    .contact-section .contact-form {
+        width: 100%;
+    }
+
+    .contact-section .contact-form {
+        margin-bottom: 30px;
+    }
+
+    .contact-section .contact-info-wrap {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+}
+
+@media screen and (max-width : 740px) {
+
+    h1 {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+}
+
+
+
+/*----NEW-CSS-START----*/
+.login-form{
+	background-color:#fff;
+	padding:18px 24px 24px;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	transition: all 0.3s ease-out 0s;
+	margin-bottom: 8px;
+	width: 100%;
+}
+.btn-ocean{
+  padding: 0px;
+  display: flex;
+  gap: 8px;
+  margin-bottom:10px;
+}
+
+.btn{
+  color: #fff;
+  font-size: 18px;
+  background: #182F4D;
+  padding:6px 20px;
+  border-radius: 0;
+  width: 100%;
+  font-weight:500;
+  text-align: center;
+  text-transform: uppercase;
+	min-height:38px;
+}
+.blue-btn{
+  background: #2EAAE0;
+  color: #fff;
+  font-size: 18px;
+  padding:6px 20px;
+  width: 100%;
+  min-height:38px;
+  text-align: center;
+  font-weight: 500;
+}
+.btn:hover{
+	background: #182F4D;
+	color: #fff !important;
+}
+.btn-border:hover{
+  background: #2EAAE0;
+}
+
+
+/* The container */
+.container_label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px; 
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #00A6D0;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
